@@ -1,0 +1,24 @@
+Source: kylin-software-keyring
+Section: misc
+Priority: optional
+Maintainer: Jing Shi <jingshi@ubuntukylin.com>
+Standards-Version: 3.9.5
+
+Package: kylin-software-keyring
+Priority: important
+Architecture: all
+Multi-Arch: foreign
+Recommends: gpgv
+Description: GnuPG keys of the Ubuntu Kylin archive
+ The Ubuntu project digitally signs its Release files. This package
+ contains the archive keys used for the Ubuntu Kylin archive.
+#
+#Package: ubuntukylin-keyring-udeb
+#Priority: optional
+#Architecture: all
+#Section: debian-installer
+#Recommends: gpgv-udeb
+#Description: GnuPG keys of the Ubuntu Kylin archive
+# The Ubuntu project digitally signs its Release files. This package
+# contains the archive keys used for the Ubuntu Kylin archive, in a
+# minimal form for use in the installer.
