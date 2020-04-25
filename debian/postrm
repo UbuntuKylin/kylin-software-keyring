@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
-    if [ -h /etc/apt/trusted.gpg.d/ubuntukylin-archive-keyring.gpg ]; then
+    if [ -h /etc/apt/trusted.gpg.d/kylin-software-keyring.gpg ]; then
         # our symlink is still there, we need to remove it to clean up
-        rm /etc/apt/trusted.gpg.d/ubuntukylin-archive-keyring.gpg
+        rm /etc/apt/trusted.gpg.d/kylin-software-keyring.gpg
     fi
 fi

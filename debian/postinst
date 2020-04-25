@@ -2,8 +2,8 @@
 
 if [ "$1" = configure ] && dpkg --compare-versions "$2" lt 2014.04.10; then
     # on fresh installs, symlink the keyring to /etc
-    if [ ! -e /etc/apt/trusted.gpg.d/ubuntukylin-archive-keyring.gpg ]; then
-        ln -s /usr/share/keyrings/ubuntukylin-archive-keyring.gpg \
-              /etc/apt/trusted.gpg.d/ubuntukylin-archive-keyring.gpg
+    if [ ! -e /etc/apt/trusted.gpg.d/kylin-software-keyring.gpg ]; then
+        ln -s /usr/share/keyrings/kylin-software-keyring.gpg \
+              /etc/apt/trusted.gpg.d/kylin-software-keyring.gpg
     fi
 fi
