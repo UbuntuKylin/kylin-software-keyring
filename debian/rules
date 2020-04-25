@@ -32,8 +32,9 @@ binary-indep: checkroot
 
 	$(install_dir) debian/tmp/usr/share/keyrings/
 	$(install_file) keyrings/kylin-software-keyring.gpg debian/tmp/usr/share/keyrings/
-	#$(install_file) keyrings/ubuntukylin-archive-removed-keys.gpg debian/tmp/usr/share/keyrings/
-	#$(install_file) keyrings/ubuntukylin-master-keyring.gpg debian/tmp/usr/share/keyrings/
+
+	$(install_dir) debian/tmp/etc/apt/sources.list.d/
+	$(install_file) debian/software.list debian/tmp/etc/apt/sources.list.d/
 
 	$(install_dir) debian/tmp/usr/share/doc/kylin-software-keyring/
 	$(install_file) README debian/tmp/usr/share/doc/kylin-software-keyring/

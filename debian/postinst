@@ -1,7 +1,6 @@
 #!/bin/sh
 
-if [ "$1" = configure ] && dpkg --compare-versions "$2" lt 2014.04.10; then
-    # on fresh installs, symlink the keyring to /etc
+if [ "$1" = configure ] ; then
     if [ ! -e /etc/apt/trusted.gpg.d/kylin-software-keyring.gpg ]; then
         ln -s /usr/share/keyrings/kylin-software-keyring.gpg \
               /etc/apt/trusted.gpg.d/kylin-software-keyring.gpg
