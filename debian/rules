@@ -37,7 +37,7 @@ binary-indep: checkroot
 	$(install_file) debian/software.list debian/tmp/etc/apt/sources.list.d/
 
 	$(install_dir) debian/tmp/usr/share/doc/kylin-software-keyring/
-	$(install_file) README debian/tmp/usr/share/doc/kylin-software-keyring/
+	$(install_file) README.md debian/tmp/usr/share/doc/kylin-software-keyring/
 	$(install_file) debian/changelog debian/tmp/usr/share/doc/kylin-software-keyring/changelog
 	gzip -9v debian/tmp/usr/share/doc/kylin-software-keyring/*
 	$(install_file) debian/copyright debian/tmp/usr/share/doc/kylin-software-keyring/
